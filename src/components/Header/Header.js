@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-        <div className="header">
-            <nav className="flex justify-center text-xs md:text-lg py-6 md:px-8 md:gap-3 gap-3 font-bold bg-gray-300 ">
+        <div className="sticky top-0">
+            <nav className="flex justify-center text-xs md:text-lg py-4 lg:py-6 md:px-8 md:gap-3 gap-3 font-bold bg-gray-300 mb-8">
                 <NavLink className="" to="/">HOME</NavLink>
                 <NavLink className="" to="/reviews">REVIEWS</NavLink>
                 <NavLink className="" to="/dashboard">DASHBOARD</NavLink>
