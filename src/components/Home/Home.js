@@ -12,14 +12,10 @@ const Home = () => {
       <div className="flex flex-col md:flex-row h-screen justify-around items-center mb-8">
         <div className="px-3 py-3 md:px-16 lg:w-3/5 order-2 md:order-last">
           <span className="text-2xl font-bold  md:text-4xl lg:text-7xl text-green-800">
-            Your best Foods
+            Your best Food<span className="text-2xl font-bold  md:text-4xl lg:text-7xl text-red-600">'</span>s
           </span>
           <p className="my-5 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            rerum eius, cum laudantium excepturi alias ipsam aliquid provident
-            blanditiis iste ducimus, nulla dolore. Sequi facere enim commodi
-            quae sit omnis.aliquid provident blanditiis iste ducimus, nulla
-            dolore. Sequi facere enim commodi quae sit omnis.
+          Find recipes for fried chicken, chicken breast, grilled chicken, chicken wings, and more! Allrecipes has more than 5,430 kitchen-approved chicken recipes.
           </p>
           <button className="rounded-full bg-green-700 hover:bg-green-900 px-10 py-3 font-bold uppercase text-white lg:text-4xl">
             Live Demo

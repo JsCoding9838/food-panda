@@ -6,11 +6,13 @@ const ReviewsAll = ({food}) => {
     const {name, img, comment, ratings}=food;
     return (
         <div>
-            <div className="lg:px-2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+            <div className="lg:px-2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4">
             
             
-            <div className="text-center space-y-2 sm:text-left">
-            <img className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src={img} alt="Woman's Face"/>
+            <div className="text-center space-y-2 md:px-4 sm:text-left">
+                <div className='rounded-full flex justify-center'>
+                    <img className="block mx-auto h-40 w-80 sm:mx-0 sm:shrink-0" src={img} alt="Woman's Face"/>
+                </div>
                 <div className="space-y-0.5 w-full">
                     <p className="text-lg text-black font-semibold">
                         sfsdfsafdsfsdfds{name}
@@ -24,7 +26,8 @@ const ReviewsAll = ({food}) => {
                         <FontAwesomeIcon icon={faStar}/>
                         <FontAwesomeIcon icon={faStar}/>
                         <FontAwesomeIcon icon={faStar}/>
-                        </span> {ratings}</p>
+                        </span> {ratings}
+                    </p>
                 </div>
                 <button className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message
                 </button>
