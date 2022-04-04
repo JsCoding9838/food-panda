@@ -1,16 +1,17 @@
 import React from 'react';
 import useFoods from '../hooks/useFoods';
-import Review from '../Review/Review';
+import ReviewsAll from '../ReviewsAll/ReviewsAll';
 
 const Reviews = () => {
 
     const [foods] = useFoods();
 
     return (
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid gap-y-3 lg:gap-x-6 py-4 lg:px-12 lg:grid-cols-3 bg-slate-600">
+
             
            {
-               foods.map(food => <Review food={food} key={food.id}></Review>)
+               foods.map(food => <ReviewsAll food={food} key={food.id}/>)
            }
 
         </div>

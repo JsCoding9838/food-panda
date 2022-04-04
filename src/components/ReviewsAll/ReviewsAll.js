@@ -2,11 +2,11 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const Review = ({food}) => {
+const ReviewsAll = ({food}) => {
     const {name, img, comment, ratings}=food;
     return (
-       
-        <div className="lg:px-2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+        <div>
+            <div className="lg:px-2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
             
             
             <div className="text-center space-y-2 sm:text-left">
@@ -31,8 +31,8 @@ const Review = ({food}) => {
             </div>
             
         </div> 
-      
-    )
+        </div>
+    );
 };
 
-export default Review;
+export default ReviewsAll;
