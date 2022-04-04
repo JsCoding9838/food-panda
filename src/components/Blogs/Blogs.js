@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <div className="lg:py-3 lg:px-32">
             <div className="lg:mb-8">
-                <h2 className="text-center text-2xl lg:text-4xl underline">About Something</h2>
+                <h2 className="text-center text-2xl lg:text-4xl underline decoration-6 underline-offset-8">About Something</h2>
             </div>
             <div className="grid lg:grid-cols-3 lg:justify-items-center gap-y-5 mt-3 text-center p-2">
                 <div className="lg:w-3/5 lg:p-5">

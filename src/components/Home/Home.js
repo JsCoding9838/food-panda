@@ -5,8 +5,8 @@ import useFoods from "../hooks/useFoods";
 import Review from "../Review/Review";
 
 const Home = () => {
-    const [foods, setFoods] = useFoods()
-    const threeFood = foods.slice(0,3)
+  const [foods] = useFoods();
+  const threeFood = foods.slice(0, 3);
   return (
     <div className="">
       <div className="flex flex-col md:flex-row h-screen justify-around items-center mb-8">
@@ -32,14 +32,20 @@ const Home = () => {
       </div>
 
       <div className="bg-slate-300 lg:h-96 lg:py-3">
-                <div className="grid grid-cols-2">
-    {
-        threeFood.map(food => <Review food={food} key={food.id}></Review>)
-    }
-                </div>
-                <button>
-                    <Link to='/reviews-details'>Reviews Details</Link>
-                </button>
+          <h1 className="lg:ml-16 lg:text-3xl font-semibold text-green-600">Reviews</h1>
+
+          <div className="grid lg:grid-cols-3 bg-slate-600">
+            {threeFood.map((food) => (
+              <Review food={food} key={food.id}></Review>
+            ))}
+          </div>
+
+          <div className="flex justify-center ">
+          <button className="rounded-full bg-green-700 hover:bg-green-900 px-6 py-2 font-bold uppercase text-white lg:text-4xl">
+            <Link className="text-2xl font-semibold" to="/reviews-details">See All Reviews</Link>
+          </button>
+          </div>
+
       </div>
     </div>
   );
