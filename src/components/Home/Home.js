@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/Images/home-img-2.png";
+import useFoods from "../hooks/useFoods";
+import Review from "../Review/Review";
 
 const Home = () => {
+    const [foods, setFoods] = useFoods()
+    const threeFood = foods.slice(0,3)
   return (
     <div className="">
       <div className="flex flex-col md:flex-row h-screen justify-around items-center mb-8">
@@ -27,7 +32,14 @@ const Home = () => {
       </div>
 
       <div className="bg-slate-300 lg:h-96 lg:py-3">
-          
+                <div className="grid grid-cols-2">
+    {
+        threeFood.map(food => <Review food={food} key={food.id}></Review>)
+    }
+                </div>
+                <button>
+                    <Link to='/reviews-details'>Reviews Details</Link>
+                </button>
       </div>
     </div>
   );
