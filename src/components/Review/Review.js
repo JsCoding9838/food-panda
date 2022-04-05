@@ -6,12 +6,12 @@ const Review = ({food}) => {
     const {name, img, comment, ratings}=food;
     return (
        
-        <div className="lg:px-2 mx-3 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center md:flex md:flex-cols-2 sm:space-y-0 ">
+        <div className="lg:px-2 mx-3 mx-auto bg-white rounded-xl drop-shadow-2xl space-y-2 sm:py-4 sm:flex sm:items-center md:flex md:flex-cols-2 sm:space-y-0">
             
             
             <div className="p-4 mb-3 space-y-2 sm:text-left">
             <div>
-            <img className="block mx-auto h-40 rounded-full sm:mx-0 sm:shrink-0" src={img} alt="Woman's Face"/>
+            <img className="block mx-auto h-40 rounded-full" src={img} alt="Woman's Face"/>
             </div>
                 <div className="space-y-0.5 w-full">
                     <p className="text-lg text-black font-semibold">

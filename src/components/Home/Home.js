@@ -27,10 +27,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-slate-300 lg:py-3">
+      <div className="lg:py-3">
           <h1 className="lg:ml-16 ml-4 text-2xl mt-14 lg:text-3xl font-semibold text-green-600">Reviews</h1>
 
-          <div className="lg:grid gap-y-3 py-4 lg:grid-cols-3 bg-slate-600">
+          <div className="lg:grid gap-y-3 py-4 lg:grid-cols-3">
             {threeFood.map((food) => (
               <Review food={food} key={food.id}></Review>
             ))}

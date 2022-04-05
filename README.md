@@ -1,4 +1,4 @@
-# Foods Site
+# Food Panda
 
 
 ## Create single application used React JSX JavaScript and TailwindCSS
