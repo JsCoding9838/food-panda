@@ -43,9 +43,10 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="lg:flex justify-around lg:px-5">
+    <div className="flex flex-col items-center gap-10 md:grid md:grid-cols-2 md:justify-items-center  lg:px-5">
     <div>
-      <BarChart width={300} height={300} data={data}>
+      <h1 className="text-center text-2xl mb-4 font-bold text-green-600">BarChart</h1>
+      <BarChart width={315} height={300} data={data}>
           <Bar dataKey="investment" type="monotone" stoke="#8884d8" fill="#8884d8" />
           <Bar dataKey="revenue" type="monotone" stoke="#82ca9d" fill="#82ca9d" />
           <XAxis dataKey="month">
@@ -57,7 +58,8 @@ const Dashboard = () => {
     </div>
 
     <div>
-      <AreaChart width={300} height={300} data={data}>
+    <h1 className="text-center text-2xl mb-4 font-bold text-green-600">AreaChart</h1>
+      <AreaChart width={315} height={300} data={data}>
           <Area dataKey="investment" type="monotone" stoke="#8884d8" fill="#8884d8" />
           <Area dataKey="revenue" type="monotone" stoke="#82ca9d" fill="#82ca9d" />
           <XAxis dataKey="month">
@@ -65,10 +67,8 @@ const Dashboard = () => {
           </XAxis>
           <YAxis ></YAxis>
           <Tooltip/>
-        </AreaChart>
+      </AreaChart>
     </div>
-
-    
   </div>
   );
 };

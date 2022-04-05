@@ -6,19 +6,19 @@ const ReviewsAll = ({food}) => {
     const {name, img, comment, ratings}=food;
     return (
         <div>
-            <div className="lg:px-2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4">
+            <div className="lg:px-2 p-4 mx-auto bg-white rounded-xl drop-shadow-2xl space-y-2 sm:py-4">
             
             
-            <div className="text-center space-y-2 md:px-4 sm:text-left">
+            <div className="space-y-2 md:px-4 sm:text-left">
                 <div className='rounded-full flex justify-center'>
-                    <img className="block mx-auto h-40 w-80 sm:mx-0 sm:shrink-0" src={img} alt="Woman's Face"/>
+                    <img className="block mx-auto w-60 h-60 rounded-full sm:mx-0 sm:shrink-0" src={img} alt="Woman's Face"/>
                 </div>
                 <div className="space-y-0.5 w-full">
                     <p className="text-lg text-black font-semibold">
-                        sfsdfsafdsfsdfds{name}
+                        {name}
                     </p>
                     <p className="text-slate-500 font-medium">
-                        sdsdfdfs sfsfafssdfsf sfsfa sfsfa sfsfa fffdafdfs {comment}
+                        {comment}
                     </p>
                     <p className="text-slate-500">Rating: <span className="text-yellow-500 text-sm">
                         <FontAwesomeIcon icon={faStar}/>
